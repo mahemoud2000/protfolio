@@ -5,266 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>محمود حامد - مبرمج مواقع محترف</title>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600&display=swap" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="css/style.css"> -->
-     <style>
-        html {
-    scroll-behavior: smooth;
-}
-body {
-    font-family: 'Cairo', sans-serif;
-    background-color: #0d0d0d;
-    color: #e0e0e0;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-    direction: rtl;
-}
-
-header {
-    background: linear-gradient(to right, #1e1e1e, #3a3a3a);
-    color: #ffffff;
-    padding: 50px 20px;
-    text-align: center;
-}
-
-header h1 {
-    font-size: 48px;
-    margin-bottom: 10px;
-    text-transform: uppercase;
-    color: #f8f8f8;
-}
-
-header p {
-    font-size: 18px;
-    margin-bottom: 30px;
-    color: #bfbfbf;
-}
-
-nav {
-    display: flex;
-    justify-content: center;
-    background-color: #0a0a0a;
-    padding: 10px 0;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-nav a {
-    color: #e0e0e0;
-    padding: 15px 20px;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: bold;
-    transition: background 0.3s ease, color 0.3s ease;
-}
-
-nav a:hover {
-    background-color: #222222;
-    color: #ffcc00;
-}
-
-.hero {
-    /* background: url('https://via.placeholder.com/1920x600') no-repeat center center/cover; */
-    height: 600px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #ffffff;
-    text-align: center;
-    padding: 0 20px;
-    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.7);
-}
-
-.hero h1 {
-    font-size: 60px;
-    font-weight: bold;
-    margin-bottom: 15px;
-    color: #ffcc00;
-}
-
-.hero p {
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-.hero .btn {
-    background-color: #ffcc00;
-    color: #ffffff;
-    padding: 15px 30px;
-    font-size: 18px;
-    border: none;
-    border-radius: 30px;
-    cursor: pointer;
-    transition: background 0.3s ease, transform 0.3s ease;
-}
-
-.hero .btn:hover {
-    background-color: #ffd740;
-    transform: scale(1.05);
-}
-
-.section {
-    padding: 70px 20px;
-    text-align: center;
-    background-color: #151515;
-    position: relative;
-    opacity: 0;
-    transform: translateY(50px);
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-}
-
-.section.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.section h2 {
-    font-size: 36px;
-    margin-bottom: 30px;
-    position: relative;
-    display: inline-block;
-    padding-bottom: 10px;
-    text-transform: uppercase;
-    color: #ffcc00;
-}
-
-.section h2::after {
-    content: '';
-    width: 60px;
-    height: 4px;
-    background: #ffcc00;
-    display: block;
-    margin: 10px auto;
-}
-
-.section-dark {
-    background-color: #202020;
-    color: #ffffff;
-}
-
-.services, .portfolio, .testimonials {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.service, .portfolio-item, .testimonial {
-    flex: 1;
-    margin: 20px;
-    padding: 20px;
-    border: 1px solid #3a3a3a;
-    border-radius: 10px;
-    background-color: #2a2a2a;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 0 15px rgba(0,0,0,0.3);
-}
-
-.service:hover, .portfolio-item:hover, .testimonial:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 0 25px rgba(0,0,0,0.5);
-}
-
-.contact-form {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    background: #2a2a2a;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0,0,0,0.3);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    overflow: auto;
-}
-#contactForm {
-    width: 90%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-.contact-form input, .contact-form textarea {
-    width: 100%;
-    padding: 15px;
-    margin: 10px 0;
-    border: 1px solid #424242;
-    border-radius: 30px;
-    background-color: #333333;
-    color: #ffffff;
-}
-
-.contact-form input::placeholder, .contact-form textarea::placeholder {
-    color: #bdbdbd;
-}
-
-.btn {
-    background-color: #ffcc00;
-    color: #ffffff;
-    padding: 15px 30px;
-    border: none;
-    border-radius: 30px;
-    cursor: pointer;
-    transition: background 0.3s ease;
-}
-
-.btn:hover {
-    background-color: #ffd740;
-}
-
-footer {
-    background-color: #1a1a1a;
-    color: #bdbdbd;
-    text-align: center;
-    padding: 40px 20px;
-}
-
-footer a {
-    color: #ffcc00;
-    text-decoration: none;
-    padding: 0 10px;
-    transition: color 0.3s ease;
-}
-
-footer a:hover {
-    color: #ffd740;
-}
-
-/* أزرار التمرير */
-.scroll-btn {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    padding: 15px;
-    background-color: #444;
-    color: #fff;
-    border: none;
-    border-radius: 50%;
-    font-size: 20px;
-    cursor: pointer;
-    opacity: 0.8;
-    transition: opacity 0.3s ease, background-color 0.3s ease;
-    display: none;
-}
-
-.scroll-btn:hover {
-    opacity: 1;
-    background-color: #ffcc00;
-}
-
-#scrollToBottom {
-    right: 80px;    
-}
-     </style>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <!-- Header -->
     <header>
-        <h1>محمود حامد - مبرمج مواقع </h1>
+        <h1>محمود حامد - مطور مواقع </h1>
         <p>تحويل الأفكار إلى مواقع ويب احترافية بأعلى المعايير التقنية</p>
     </header>
 
@@ -289,9 +35,9 @@ footer a:hover {
     <!-- About Section -->
     <section id="about" class="section">
         <h2>من هو محمود حامد؟</h2>
-        <h3> من هو محمود حامد؟</h3>
+        <!-- <h3> من هو محمود حامد؟</h3> -->
         <p>
-    مرحباً، أنا محمود حامد، مبرمج مواقع محترف متخصص في تحويل الأفكار إلى حلول ويب مبتكرة ومتميزة. أمتلك خبرة واسعة في تطوير مواقع وتطبيقات الويب المتقدمة، وأقدم حلولًا تقنية متكاملة تعتمد على أحدث المعايير العالمية. أؤمن بأن كل مشروع يحمل معه تحديًا جديدًا، وأسعى دائمًا لتحويل هذه التحديات إلى فرص نجاح وتفوق لعملائي.
+    مرحباً، أنا محمود حامد، مطور مواقع محترف متخصص في تحويل الأفكار إلى حلول ويب مبتكرة ومتميزة. أمتلك خبرة واسعة في تطوير مواقع وتطبيقات الويب المتقدمة، وأقدم حلولًا تقنية متكاملة تعتمد على أحدث المعايير العالمية. أؤمن بأن كل مشروع يحمل معه تحديًا جديدًا، وأسعى دائمًا لتحويل هذه التحديات إلى فرص نجاح وتفوق لعملائي.
 </p>
 <h3>   لماذا تختار العمل معي؟</h3>
 <p>
@@ -331,12 +77,14 @@ footer a:hover {
         <h2>أعمالي</h2>
         <div class="portfolio">
             <div class="portfolio-item">
-                <h3>مشروع 1</h3>
-                <p>وصف مختصر للمشروع وروابط لمعاينته.</p>
+                <h3>نظام كاشير</h3>
+                <p> ادارة محلك بيع منتجات بكل سهوله مع اضافه مخزن كامل وطرق احترافيه لأنشاء تقارير  مبيعات وتقارير منتجات.</p>
+                <a href="#" style="color: #fff;">شاهد النظام</a>
             </div>
             <div class="portfolio-item">
-                <h3>مشروع 2</h3>
-                <p>وصف مختصر للمشروع وروابط لمعاينته.</p>
+                <h3>مواقع تعريفيه</h3>
+                <p>موقع تعريفي للأفراد وللشركات  يمكنك التواصل مع عملائك من خلال موقعك الخاص وتقديم الاستشارات .</p>
+                <a href="#" style="color: #fff;">شاهد الموقع</a>
             </div>
         </div>
     </section>
@@ -375,6 +123,7 @@ footer a:hover {
             <a href="#">لينكدإن</a> |
             <a href="#">تويتر</a>
         </p>
+        <p>201118043692+</p>
     </footer>
    
     <!-- أزرار التمرير -->
