@@ -16,25 +16,25 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-  // Show or hide scroll buttons
-  window.onscroll = function() {
-    const scrollBtnTop = document.getElementById('scrollToTop');
-    const scrollBtnBottom = document.getElementById('scrollToBottom');
-    if (window.scrollY > 200) {
-        scrollBtnTop.style.display = "block";
-        scrollBtnBottom.style.display = "block";
-    } else {
-        scrollBtnTop.style.display = "none";
-        scrollBtnBottom.style.display = "none";
-    }
-};
+//   // Show or hide scroll buttons
+//   window.onscroll = function() {
+//     const scrollBtnTop = document.getElementById('scrollToTop');
+//     const scrollBtnBottom = document.getElementById('scrollToBottom');
+//     if (window.scrollY > 200) {
+//         scrollBtnTop.style.display = "block";
+//         scrollBtnBottom.style.display = "block";
+//     } else {
+//         scrollBtnTop.style.display = "none";
+//         scrollBtnBottom.style.display = "none";
+//     }
+// };
 
-// Scroll to top
-document.getElementById('scrollToTop').onclick = function() {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-};
+// // Scroll to top
+// document.getElementById('scrollToTop').onclick = function() {
+//     window.scrollTo({ top: 0, behavior: 'smooth' });
+// };
 
-// Scroll to bottom
-document.getElementById('scrollToBottom').onclick = function() {
-    window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
-};
+// // Scroll to bottom
+// document.getElementById('scrollToBottom').onclick = function() {
+//     window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+// };
