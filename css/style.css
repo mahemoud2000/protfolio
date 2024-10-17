@@ -273,7 +273,7 @@ footer a:hover {
 }
 
 /* أزرار التمرير */
-.scroll-btn {
+/* .scroll-btn {
     position: fixed;
     bottom: 20px;
     right: 20px;
@@ -296,7 +296,7 @@ footer a:hover {
 
 #scrollToBottom {
     right: 80px;    
-}
+} */
 /* canvas 3d  start*/
 #networkCanvas > canvas {
     display: block;
@@ -315,7 +315,30 @@ footer a:hover {
     height: 100vh;
 }
 /* canvas 3d end */
+/*  WhatsApp button  start*/
+       .whatsapp-button {
+        position: fixed;
+        bottom: 20px; /* المسافة من الأسفل */
+        right: 20px; /* المسافة من اليمين */
+        background-color: #0d0d0d; /* لون زر الواتساب */
+        color: white;
+        border: none;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        font-size: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        cursor: pointer;
+        z-index: 1000; /* ليكون فوق باقي العناصر */
+    }
 
+    .whatsapp-button:hover {
+        background-color: #128C7E; /* لون عند التمرير */
+    }
+/*  WhatsApp button  end*/
 
 /* إعدادات استجابة */
 @media (max-width: 768px) {
